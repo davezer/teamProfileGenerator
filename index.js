@@ -4,6 +4,7 @@ const Manager = require('./lib/Manager');
 const Intern = require('./lib/Intern');
 
 const fs = require('fs');
+const generateTeam = require('./src/generateTeam');
 
 
 // const renderHTML = require('./src/generateHTML');
@@ -122,7 +123,7 @@ const engineerQuestions = () => {
                 internQuestions();
                 break;
             default:
-                writeToFile('dist/index.html', generateHTML(team));
+                writeToFile('dist/index.html', generateTeam(team));
 
         }
     })
@@ -171,7 +172,7 @@ const internQuestions = () => {
         }
     ])
     .then((internAnswers) => {
-        const intern = new Intern(internAnswers.name, internAnswers.id, internAnswers.email, internAnswers.school)
+        const intern = new Intern(internAnswers.id, internAnswers.name, internAnswers.email, internAnswers.school)
         team.push(intern)
         switch(internAnswers.addMember){
             case 'Engineer':
@@ -181,7 +182,7 @@ const internQuestions = () => {
                 internQuestions();
                 break;
             default:
-                writeToFile('dist/index.html', generateHTML(team))
+                writeToFile('dist/index.html', generateTeam(team))
         }
     })
 };

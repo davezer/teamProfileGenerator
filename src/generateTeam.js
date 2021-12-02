@@ -38,7 +38,7 @@ let generateManagerCard = (Manager) => {
         <ul class='list-group list-group-flush'>
             <li class='list-group-item'>ID: ${Manager.getId()}</li>
             <li class='list-group-item'>Email: ${Manager.getEmail()}</li>
-            <li class='list-group-item'>School: ${Manager.getOfficeNumber()}</li>
+            <li class='list-group-item'>Office Number: ${Manager.getOfficeNumber()}</li>
         </ul>
     </div>
 </div>
@@ -56,7 +56,7 @@ let generateEngineerCard = (Engineer) => {
         <ul class='list-group list-group-flush'>
             <li class='list-group-item'>ID: ${Engineer.getId()}</li>
             <li class='list-group-item'>Email: ${Engineer.getEmail()}</li>
-            <li class='list-group-item'>School: ${Engineer.getGitHub()}</li>
+            <li class='list-group-item'>gitHub: ${Engineer.getGitHub()}</li>
         </ul>
     </div>
 </div>
@@ -94,7 +94,7 @@ function generateTeam(team) {
       <title>My Team</title>
     </head>
     <body>
-    <div class="jumbotron jumbotron-fluid bg-warning">
+    <div class="jumbotron jumbotron-fluid bg-info">
       <div class="container">
         <h1 class="display-4 text-center">My Team</h1>
       </div>
