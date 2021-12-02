@@ -8,7 +8,7 @@ const fs = require('fs');
 
 // const renderHTML = require('./src/generateHTML');
 
-let teamArr = [];
+let team = [];
 
 
 // manager function questions
@@ -55,7 +55,7 @@ const managerQuestions = () => {
     ])
     .then((managerAnswers) => {
         const manager = new Manager(managerAnswers.id, managerAnswers.name, managerAnswers.email, managerAnswers.officeNumber)
-        teamArr.push(manager)
+        team.push(manager)
         switch(managerAnswers.addMember){
             case 'Engineer':
                 engineerQuestions();
@@ -64,7 +64,7 @@ const managerQuestions = () => {
                 internQuestions();
                 break;
             default:
-                writeToFile('dist/index.html', generateHTML(teamArr));
+                writeToFile('dist/index.html', generateHTML(team));
         }
     });
 }
@@ -113,7 +113,7 @@ const engineerQuestions = () => {
     ])
     .then((engineerAnswers) => {
         const engineer = new Engineer(engineerAnswers.id, engineerAnswers.name, engineerAnswers.email, engineerAnswers.gitHub)
-        teamArr.push(engineer)
+        team.push(engineer)
         switch(engineerAnswers.addMember) {
             case 'Engineer':
                 engineerQuestions();
@@ -122,7 +122,7 @@ const engineerQuestions = () => {
                 internQuestions();
                 break;
             default:
-                writeToFile('dist/index.html', generateHTML(teamArr));
+                writeToFile('dist/index.html', generateHTML(team));
 
         }
     })
@@ -172,7 +172,7 @@ const internQuestions = () => {
     ])
     .then((internAnswers) => {
         const intern = new Intern(internAnswers.name, internAnswers.id, internAnswers.email, internAnswers.school)
-        teamArr.push(intern)
+        team.push(intern)
         switch(internAnswers.addMember){
             case 'Engineer':
                 engineerQuestions();
@@ -181,7 +181,7 @@ const internQuestions = () => {
                 internQuestions();
                 break;
             default:
-                writeToFile('dist/index.html', generateHTML(teamArr))
+                writeToFile('dist/index.html', generateHTML(team))
         }
     })
 };
