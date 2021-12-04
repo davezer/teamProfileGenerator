@@ -45,17 +45,43 @@ Once the Application runs, it will generate an index.html file in the 'dist' fol
 
 ![demo gif](https://github.com/davezer/teamProfileGenerator/blob/main/src/img/teamGeneratorDemo.gif?raw=true)
 
-
 ## Deployed
+
+https://github.com/davezer/teamProfileGenerator
 
 ## Languages
 
+Javascript, Bootstrap, HTML, Node, Inquirer, Jest
+
 ## Screenshot
+
+    What the command line should look like:
+
+![Command Line screenshot](https://github.com/davezer/teamProfileGenerator/blob/main/src/img/InquirerSS.png?raw=true)
+
+    What the passing tests should look like:
+
+![passing tests](https://github.com/davezer/teamProfileGenerator/blob/main/src/img/passingTests.png?raw=true)
+
+    What the generated web page should look like:
+
+![generated HTML page](https://github.com/davezer/teamProfileGenerator/blob/main/src/img/myTeamSS.png?raw=true)
 
 ## License
 
+This project is licensed under the MIT license.
+
 ## Contributing
+
+If you would like to contribute, feel free to contact me in the ways listed below in the Questions section. This is a module homework assignment from Ucoon Coding Bootcamp.
 
 ## Tests
 
+To run the tests for this application, enter the following command on the root directory:
+
+    npm run test
+
 ## Questions
+
+If you have any questions about the project, you can contact me at: <a href="mailto:daveoliverio@gmail.com">daveoliverio@gmail.com</a> <br>
+Check out my gitHub! <a href="https://github.com/davezer">davezer</a>
