@@ -56,7 +56,7 @@ let generateEngineerCard = (Engineer) => {
         <ul class='list-group list-group-flush'>
             <li class='list-group-item'>ID: ${Engineer.getId()}</li>
             <li class='list-group-item'>Email: ${Engineer.getEmail()}</li>
-            <li class='list-group-item'>gitHub: ${Engineer.getGitHub()}</li>
+            <li class='list-group-item'>gitHub: <a href="https://github.com/${Engineer.getGitHub()}" target="_blank">${Engineer.getGitHub()}</a></li>
         </ul>
     </div>
 </div>
