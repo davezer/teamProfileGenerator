@@ -43,7 +43,7 @@ Once the Application runs, it will generate an index.html file in the 'dist' fol
 
 ## Demo
 
-
+![demo gif](https://github.com/davezer/teamProfileGenerator/blob/main/src/img/teamGeneratorDemo.gif?raw=true)
 
 
 ## Deployed
